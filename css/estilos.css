@@ -71,11 +71,19 @@ h1{
     padding: 0 1.5rem;
 }
 
+.nav-menu li{
+    transition: 0.7s ease;
+}
+
 ul li a:hover{
     color: red;
     background-color: #FFCA03;
     border-radius: 0.5rem;
     box-shadow: 2px 2px red;
+}
+
+ul li:hover{
+    transform: translateY(5px);
 }
 
 /* -- Banner */
@@ -148,6 +156,17 @@ ul li a:hover{
     display: flex;
     align-items: center;
     font-weight: bold;
+}
+
+.bloque{
+    transition: .7s ease;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.bloque:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px black;
 }
 
 /* -- Footer -- */
