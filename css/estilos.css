@@ -22,12 +22,19 @@ h3{
 .letraParrafo{
     font-family: 'Dongle', sans-serif;
     font-size: 2.5em;
+    color: #E6DDC4 !important;
 }
 
-.letraNav,
-.letraFooter{
+.letraNav > li > a{
     font-family: 'Dongle', sans-serif;
     font-size: 4em;
+    color: #E6DDC4 !important;
+}
+
+.letraFooter{
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.8em;
+    color: #E6DDC4 !important;
 }
 
 h2{
@@ -35,33 +42,42 @@ h2{
     text-align: center;
     font-weight: bold;
     color: #E6DDC4;
+    font-size: 3em;
 }
 
+body{
+    background-color: #E6DDC4;
+}
 /* -- MAIN -- */
-.main .header,
-.main .footer{
-    background-image: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
+.header,
+footer{
+    background-image: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%) !important;
 }
 
 /* -- Header -- */
-.main > .header{
+/* header{
     display: flex;
-    position: fixed;
+    position: fixed !important; 
     width: 100%;
     z-index: 1000;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.logo-header{
+/* .logo-header{
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.titulo-header{
+    color: #FFCA03 !important;
+    font-family: 'Trocchi', serif; 
+    font-size: 50px;
 }
 
-h1{
-    color: #FFCA03;
-    font-family: 'Trocchi', serif; 
+header button{
+    background-color: #FFCA03 !important;
 }
 
 .nav-menu a{
@@ -71,14 +87,18 @@ h1{
     padding: 0 1.5rem;
 }
 
-.nav-menu li{
+ul > li{
     transition: 0.7s ease;
+    margin-left: 50px;
 }
 
 ul li a:hover{
-    color: red;
+    color: red !important;
     background-color: #FFCA03;
     border-radius: 0.5rem;
+    font-weight: bold;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
     box-shadow: 2px 2px red;
 }
 
@@ -130,12 +150,12 @@ ul li:hover{
     background-color: tan;
 }
 
-.container-bienv{
+/* .container-bienv{
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+} */
 
 /* -- SERVICIO -- */
 .servicio{
@@ -152,8 +172,10 @@ ul li:hover{
     height: 128px;
 }
 
-.container-servicio .bloque{
+.bloque{
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-weight: bold;
 }
@@ -162,6 +184,7 @@ ul li:hover{
     transition: .7s ease;
     border-radius: 10px;
     box-shadow: 10px 5px 5px black;
+    margin: 15px;
 }
 
 .bloque:hover{
@@ -207,9 +230,9 @@ h4{
 
 /* -- VENTANA MENU -- */
 .menu{
-    margin-top: 9rem;
-    background-image: url("../imagenes/menu_imagenes/menu-imagen.jpg");
-    background-attachment: fixed;
+    margin-top: 10rem !important;
+    background-image: url("../imagenes/menu_imagenes/menu-imagen.jpg") !important;
+    background-attachment: fixed !important;
 }
 
 .titulo-mn{
@@ -284,9 +307,7 @@ h4{
 }
 
 .banner-nosotros{
-    margin-top: 9rem;
-    width: 100%;
-    
+    margin-top: 9rem !important;
 }
 
 .banner-global-nosotros{
@@ -296,12 +317,14 @@ h4{
 }
 
 .slogan-nosotros{
+    text-align: center;
     background-color: #064663;
     position: absolute;
     color: #FFCA03;
     border: 3px solid yellow; 
     border-radius: 1rem;
     font-family: 'Sofia', cursive;
+    width: 50%;
 }
 
 .parrafo1,
@@ -325,12 +348,18 @@ h4{
     width: 100%;
 }
 
+
 /* -- VENTANA LOCALES -- */
 
 .container-locales{
     margin-top: 9rem;
     display: grid;
 }
+
+.mrg{
+    margin-top: 10rem;
+}
+
 
 .infoLocales{
     width: 100%;
@@ -355,9 +384,7 @@ h4{
 
 /* -- Nuestros Locales -- */
 .nuestrosLocales{
-    display: grid;
-    justify-items: center;
-    background-image: url("../imagenes/imagen-local.jpg");
+    background-image: url("../imagenes/imagen-local.jpg") !important;
 }
 
 .bloque-local{
@@ -370,13 +397,13 @@ h4{
 
 /* -- VENTANA CONTACTO -- */
 .formularioContacto{
-    margin-top: 9rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1.5rem;
+    margin-top: 10rem;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* padding: 1.5rem; */
     width: auto;
-    background-image: linear-gradient(to bottom, #0d1539, #00203c, #00262e, #002919, #1e2908);
+    background-image: linear-gradient(to bottom, #0d1539, #00203c, #00262e, #002919, #1e2908) !important;
 }
 
 .introContacto{
@@ -413,6 +440,10 @@ h4{
     align-items: center;
 }
 
+form > input{
+    width: 34rem !important;
+}
+
 .formulario{
     background-color: #E9DAC1;
 }
@@ -443,19 +474,19 @@ h4{
     border: none;
 }
 
-.formulario input[type="submit"]{
+/* .formulario input[type="submit"]{
     padding:0;
     margin-top: 25px;
     width: 150px;
     height: 40px;
     color: white;
-    background-color: #161E54;
+    background-color: transparent;
     font-weight: bold;
     cursor: pointer;
-}
+} */
 
 /* ------------------------------ */
-@media screen and (min-width: 320px){
+/* @media screen and (min-width: 320px){
     h2{
         font-size: 2em;
     }
@@ -494,10 +525,10 @@ h4{
         font-size: 5em;
         margin: 0 10rem 0 2.5rem;
         letter-spacing: 2.5px;
-    }
+    } */
 
     /* -- Banner -- */
-    .banner img{
+    /* .banner img{
         width: 100%;
         height: 40rem;
     }
@@ -506,19 +537,19 @@ h4{
         padding: 1rem;
         font-size: 2em;
         text-align: center;
-    }
+    } */
 
     /* -- IMG -- */
     /* --------- */
 
     /*  -- Bienv -- */
-    .bienv{
+    /* .bienv{
         height: auto;
         padding: 5rem 0 5rem 0;
-    }
+    } */
 
     /* -- Servicio -- */
-    .container-servicio{
+    /* .container-servicio{
         flex-direction: column;
         align-items: center;
     }
@@ -527,21 +558,21 @@ h4{
         flex-direction: column;
         width: 30rem;
         margin: .5rem;
-    }
+    } */
 
     /* -------- FOOTER ----- */
-    .footer{
+    /* .footer{
         flex-direction: column;
         align-items: center;
     }
 
     .footer > .colum{
         margin: 3.5rem 0;
-    }
+    } */
     /* --------------------- */
 
     /* -- Ventana - MENU -- */
-    .menu{
+    /* .menu{
         grid-template-columns: auto;
         grid-template-areas: 
         "titulo-mn"
@@ -559,10 +590,10 @@ h4{
 
     .lista > img{
         margin-top: 1.5rem;
-    }
+    } */
 
     /* Ventana - NOSOTROS */
-    .container-nosotros{
+    /* .container-nosotros{
         display: grid;
         grid-template-columns: auto;
         grid-template-areas:
@@ -588,10 +619,10 @@ h4{
     .img-nosotros1 img,
     .img-nosotros2 img{
         height: 45rem;
-    }
+    } */
 
     /* ------LOCALES ------- */
-    .container-locales{
+    /* .container-locales{
         grid-template-columns: auto;
     }
     
@@ -606,20 +637,20 @@ h4{
 
     .descubreLolos{
         height: 100%;
-    }
+    } */
     /* -- Nuestros Locales -- */
-    .nuestrosLocales{
+    /* .nuestrosLocales{
         grid-template-columns: auto;
     }
 
     .tituloLocal,
     .bloque-local{
         grid-column: 1 / -1;
-    }
+    } */
 
     /* -- VENTANA CONTACTO -- */
     /* 320px */
-    .fondo{
+    /* .fondo{
         width: 75%;
     }
 
@@ -627,10 +658,10 @@ h4{
         width: 75%;
     }
 
-}
+} */
 
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     h2{
         font-size: 3em;
     }
@@ -655,10 +686,10 @@ h4{
     .main > .imagen,
     .main > .bienv{
         grid-column: span 2;
-    }
+    } */
 
     /* -- HEADER */
-    #btnMenu{
+    /* #btnMenu{
         display: none;
     }
 
@@ -671,13 +702,13 @@ h4{
         font-size: 7em;
         margin: 0 20rem 0 5rem;
         letter-spacing: 5px;
-    }
+    } */
 
     /* -- Banner -- */
-    .slogan-texto{
+    /* .slogan-texto{
         font-size: 3em;
         padding: 2rem;
-    }
+    } */
 
     /* -- IMG -- */
     /*  -------- */
@@ -686,23 +717,23 @@ h4{
     /* -------- */
 
     /* -- servicio --  */
-    .container-servicio{
+    /* .container-servicio{
         flex-direction: row;
     }
     
     .container-servicio .bloque{
         width: 25rem;
         margin: 3rem;
-    }
+    } */
 
     /* footer */
-    .footer{
+    /* .footer{
         flex-direction: row;
         justify-content: space-evenly;
-    }
+    } */
 
     /* Ventana - MENU */
-    .menu{
+    /* .menu{
         margin-top: 9rem;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -710,17 +741,17 @@ h4{
         "titulo-mn titulo-mn"
         "sub-mn1 sub-mn2"
         "menu-izq menu-der";
-    }
+    } */
 
-    .lista{
+    /* .lista{
         flex-direction: row-reverse;
         justify-content: center;
         width: 60rem;
         height: 25rem;
-    }
+    } */
 
     /* Ventana - NOSOTROS */
-    .container-nosotros{
+    /* .container-nosotros{
         display: grid;
         grid-template-columns: repeat(2,50%);
         grid-template-areas:
@@ -742,10 +773,10 @@ h4{
     .img-nosotros1 img,
     .img-nosotros2 img{
         height: 55rem;
-    }
+    } */
 
     /* ----- LOCALES ----- */
-    .container-locales{
+    /* .container-locales{
         grid-template-columns: repeat(2,50%);
     }
 
@@ -760,11 +791,11 @@ h4{
 
     .descubreLolos{
         height: 75%;
-    }
+    } */
 
     /* -- Nuestros Locales -- */
 
-    .nuestrosLocales{
+    /* .nuestrosLocales{
         grid-template-columns: repeat(3,1fr);
     }
 
@@ -774,27 +805,55 @@ h4{
     
     .bloque-local{
         grid-column: span 1;
-    }
+    } */
 
     /* -- VENTANA CONTACTO -- */
     /* 1200PX */
-    .fondo{
+    /* .fondo{
         width: 100%;
     }
 
     .formulario{
         width: 100%;
     }
+} */
 
-    
+@media screen and (min-width: 320x){
+    .height-menu{
+        height: auto;
+    }
 
+    .slogan-nosotros{
+        width: 20px;
+        padding: 1rem;
+        font-size: 1em;
+        text-align: center;
+    }
 
-
-
-
-
+    .slogan-texto{
+        padding: 1rem;
+        font-size: 3em;
+        text-align: center;
+    }
 
 }
 
+@media screen and (min-width: 820px){
+    .height-menu{
+        height: 25rem;
+    }
 
+    .slogan-nosotros{
+        font-size: 3em;
+        padding: 2rem;
+    }
 
+    .img-banner{
+        height: 800px;
+    }
+
+    .slogan-texto{
+        font-size: 3em;
+        padding: 2rem;
+    }
+}

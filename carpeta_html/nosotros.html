@@ -6,72 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../imagenes/Lolos.png" />
     <title>Lolos</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-search-pseudo-elements></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
-    <div class="main">
-        <header class="header">
-          <div class="logo-header">
-            <a href="index.html"><img src="../imagenes/Lolos.png" alt="LogoLolos" /></a>
-            <h1>Lolos</h1>
-          </div>
-          <nav>
-            <ul class="nav-menu letraNav">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="locales.html">Locales</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
+    <header>
+      <nav class="navbar navbar-expand-lg header fixed-top">
+        <div class="container-fluid letraNav">
+          <a href="../index.html"><img src="../imagenes/Lolos.png" alt="LogoLolos" /></a>
+          <a class="navbar-brand titulo-header" href="index.html">Lolos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav letraNav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="locales.html">Locales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-            <i id="btnMenu" class="fas fa-bars"></i>
-          </nav>
-        </header>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <div class="container-nosotros">
+    <div class="container-nosotros">
+      <!--Banner-->
+      <section class="container-fluid banner-nosotros">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+          <img class="img-fluid" src="../imagenes/nosotros.jpg" />
+          <p class="slogan-nosotros">Lolos te ofrece la mayor variedad de burgers del norte chico, ¿No se te antoja una?</p>
+        </div>
+      </section>
 
-          <!--Banner-->
-          <section class="banner-nosotros">
-            <div class="banner-global-nosotros">
-              <img src="../imagenes/nosotros.jpg" />
-              <p class="slogan-nosotros">Lolos te ofrece la mayor variedad de burgers del norte chico, ¿No se te antoja una?</p>
+      <!--  -->
+
+      <div class="container">
+        <div class="row letraParrafo">
+          <div class="col-sm-12 col-md-6 col-xl-6">
+            <img class="img-fluid" src="../imagenes/nosotros_1.jpg" alt="nosotros_1" />
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-6 text-center">
+            <h3>200 gr. de Honestidad</h3>
+            <div>
+              <p>
+                Somos Lolos, el mejor exponente de las hamburguesas en todo el norte chico. Llevamos a tu paladar el sabor unico que posee nuestra carne, con la diferencia que no necesitas de mascaras
+                o hechizos para brillar con luz propia.
+              </p>
+              <p>
+                Ideal para conquistar a esa persona que tanto te gusta, cobrar la apuesta de tus amigos por ese partido de la seleccion o para engreir a toda tu familia. Lolos es tu mejor opcion para
+                crear esos momentos que podras recordar con una sonrisa en tu rostro.
+              </p>
+              <p>
+                Durante el tiempo nuestras hamburguesas recorren las calles mas importantes del pais para llegar a tu mesa, con la mano de un buen servicio y del ambiente fresco y relajado que tanto
+                necesitas para escaparte del mundo por un par de horas.
+              </p>
             </div>
-          </section>
-
-          <!-- img-nosotros1 -->
-          <div class="img-nosotros1">
-            <img class="tamaño-imagen" src="../imagenes/nosotros_1.jpg" alt="nosotros_1" />
           </div>
 
-          <!-- parrafo1 -->
-          <article class="parrafo1">
-            <div class="container-p1 letraParrafo">
-              <h3>200 gr. de Honestidad</h3>
-              <div>
-                <p>
-                  Somos Lolos, el mejor exponente de las hamburguesas en todo el norte chico. Llevamos a tu paladar el sabor unico que posee nuestra carne, con la diferencia que no necesitas de mascaras
-                  o hechizos para brillar con luz propia.
-                </p>
-                <p>
-                  Ideal para conquistar a esa persona que tanto te gusta, cobrar la apuesta de tus amigos por ese partido de la seleccion o para engreir a toda tu familia. Lolos es tu mejor opcion para
-                  crear esos momentos que podras recordar con una sonrisa en tu rostro.
-                </p>
-                <p>
-                  Durante el tiempo nuestras hamburguesas recorren las calles mas importantes del pais para llegar a tu mesa, con la mano de un buen servicio y del ambiente fresco y relajado que tanto
-                  necesitas para escaparte del mundo por un par de horas.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- img-nosotros2 -->
-          <div class="img-nosotros2">
-            <img class="tamaño-imagen" src="../imagenes/nosotros_2.jpg" alt="nosotros_2" />
-          </div>
-
-          <!-- parrafo2 -->
-          <article class="parrafo2">
-            <div class="container-p2 letraParrafo">
+          <div class="row flex-xl-colum-reverse">
+            <div class="col-sm-12 col-md-6 col-xl-6 text-center">
               <h3>Nuestra Familia</h3>
               <div>
                 <p>
@@ -85,26 +103,36 @@
                 <p>¡Bienvenido a tu casa!¡Bienvenido a LOLOS!</p>
               </div>
             </div>
-          </article>
-        </div>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="colum">
-          <div class="footer-logo">
-            <img src="../imagenes/Lolos.png" alt="LogoLolos" />
+            <div class="col-sm-12 col-md-6 col-xl-6 d-flex justify-content-center">
+              <img class="img-fluid" src="../imagenes/nosotros_2.jpg" alt="nosotros_2" />
+            </div>
           </div>
         </div>
-        <div class="colum letraFooter">
-          <h4>Contactanos :</h4>
-          <div>
-            <p><a href="mailto:loloshuacho@gmail.com" target="_blank">reservaslolos@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-primary letraFooter text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <p class="titulo-header">Lolos</p>
+            <img src="../imagenes/Lolos.png" alt="LogoLolos" />
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 letraFooter">
+            <p class="mb-10">Contactanos :</p>
+            <a class="list-unstyled" href="mailto:loloshuacho@gmail.com" target="_blank">reservaslolos@gmail.com</a>
             <p>+51 921 145 388</p>
             <p>Sede principal: Av. 28 de Julio</p>
           </div>
-        </div>
-        <div class="colum letraFooter">
-          <h4>Sigue nuestras redes sociales :</h4>
-          <div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 letraFooter">
+            <p class="mb-10">Sigue nuestras redes sociales :</p>
+            <div class="colum-redes">
+              <img src="../imagenes/twitter.png" alt="twitter" />
+              <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            </div>
             <div class="colum-redes">
               <img src="../imagenes/instagram.png" alt="instagram" />
               <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -113,13 +141,9 @@
               <img src="../imagenes/facebook.png" alt="facebook" />
               <a href="https://www.facebook.com/" target="_blank">Facebook</a>
             </div>
-            <div class="colum-redes">
-              <img src="../imagenes/twitter.png" alt="twitter" />
-              <a href="https://www.twitter.com/" target="_blank">Twitter</a>
-            </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

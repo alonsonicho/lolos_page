@@ -6,196 +6,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../imagenes/Lolos.png" />
     <title>Lolos</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-search-pseudo-elements></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
-    <div class="main">
-      <header class="header">
-        <div class="logo-header">
-          <a href="index.html"><img src="../imagenes/Lolos.png" alt="LogoLolos" /></a>
-          <h1>Lolos</h1>
-        </div>
-        <nav>
-          <ul class="nav-menu letraNav">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="locales.html">Locales</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-          <i id="btnMenu" class="fas fa-bars"></i>
+
+      <header>
+        <nav class="navbar navbar-expand-lg header fixed-top">
+          <div class="container-fluid letraNav">
+            <a href="../index.html"><img src="../imagenes/Lolos.png" alt="LogoLolos" /></a>
+            <a class="navbar-brand titulo-header" href="index.html">Lolos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav letraNav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="locales.html">Locales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
 
-      <section class="menu letraParrafo">
-        <h2 class="titulo-mn">MENU</h2>
-        <h2 class="sub-mn1">HAMBURGUESAS:</h2>
-        <div class="menu-izq">
-          <!--LISTA-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos.png" alt="clasica_lolos" />
-            <div class="contenedor-infoMenu">
-              <h3>Clasica Lolos</h3>
-              <p>200 gr. de carne , aros de cebolla blanca fresca, rodajas de tomate, lechuga, queso y salsa de la casa.</p>
-              <p>$8.5</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos_xl.png" alt="clasica_lolos_xl" />
-            <div class="contenedor-infoMenu">
-              <h3>Clasica Lolos XL</h3>
-              <p>400 gr. de carne, aros de cebolla blanca fresca, rodajas de tomate lechuga, queso y salsa de la casa.</p>
-              <p>$11.00</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/crispy_chiken.png" alt="crispy_chiken" />
-            <div class="contenedor-infoMenu">
-              <h3>Crispy Chicken</h3>
-              <p>200 gr. de pollo ahumado crocante, lechuga, coleslaw y salsa carretillera, servido en pan brioche.</p>
-              <p>$12.50</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/frankfurt.png" alt="frankfurt" />
-            <div class="contenedor-infoMenu">
-              <h3>Frankfurt</h3>
-              <p>200 gr. de carne artesanal, salchicha alemana grillada, queso cheddar fundido y lechuga.</p>
-              <p>$16.00</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/san_juan.png" alt="san_juan" />
-            <div class="contenedor-infoMenu">
-              <h3>San Juan</h3>
-              <p>200 gr. de carne parrillera, queso semi mantecoso, chalaquita, lechuga y patacones, servido en pan brioche.</p>
-              <p>$10.00</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/toscana.png" alt="toscana" />
-            <div class="contenedor-infoMenu">
-              <h3>Toscana</h3>
-              <p>200 gr. de carne parrillera, queso semi mantecoso y trozos de champinon salteados en vino blanco.</p>
-              <p>$17.00</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/veggie_grill.png" alt="veggie_grill" />
-            <div class="contenedor-infoMenu">
-              <h3>Veggie Grill</h3>
-              <p>200 gr. de hamburguesa de quinua, gruesa lamina de queso, cebolla grillada, lechuga y guacamole.</p>
-              <p>$15.50</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/wall_street.png" alt="wall_street" />
-            <div class="contenedor-infoMenu">
-              <h3>Wall Street</h3>
-              <p>200 gr. de carne angus de la casa, cebolla caramelizada, tocino crocante y onions rings.</p>
-              <p>$14.50</p>
-            </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes1/palermo_lolos.png" alt="palermo_lolos" />
-            <div class="contenedor-infoMenu">
-              <h3>Palermo Lolos</h3>
-              <p>200 gr. de carne parrillera, queso semi mantecoso, chimichurri ahumado, salsa de queso y mermelada de aji amarillo.</p>
-              <p>$12.50</p>
-            </div>
-          </div>
-        </div>
+      <!-- Section MENU -->
 
-        <h2 class="sub-mn2">PARA COMPARTIR:</h2>
-        <div class="menu-der">
-          <!--Lista-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/camotes_fritos.png" alt="camotes_fritos" />
-            <div class="contenedor-infoMenu">
-              <h3>Camotes fritos</h3>
-              <p>Porcion de crocantes camotes fritos.</p>
-              <p>$7.00</p>
+      <section class="menu letraParrafo container">
+        <h2 class="titulo-mn">MENU</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>HAMBURGUESAS:</h2>
+            <!--LISTA-->
+            <div class="container-fluid bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos.png" alt="clasica_lolos" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Clasica Lolos</h3>
+                <p>200 gr. de carne , aros de cebolla blanca fresca, rodajas de tomate, lechuga, queso y salsa de la casa.</p>
+                <p>$8.5</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos_xl.png" alt="clasica_lolos_xl" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Clasica Lolos XL</h3>
+                <p>400 gr. de carne, aros de cebolla blanca fresca, rodajas de tomate lechuga, queso y salsa de la casa.</p>
+                <p>$11.00</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/crispy_chiken.png" alt="crispy_chiken" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Crispy Chicken</h3>
+                <p>200 gr. de pollo ahumado crocante, lechuga, coleslaw y salsa carretillera, servido en pan brioche.</p>
+                <p>$12.50</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/frankfurt.png" alt="frankfurt" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Frankfurt</h3>
+                <p>200 gr. de carne artesanal, salchicha alemana grillada, queso cheddar fundido y lechuga.</p>
+                <p>$16.00</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/san_juan.png" alt="san_juan" />
+              <div class="text-light text-center row align-items-center">
+                <h3>San Juan</h3>
+                <p>200 gr. de carne parrillera, queso semi mantecoso, chalaquita, lechuga y patacones, servido en pan brioche.</p>
+                <p>$10.00</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/toscana.png" alt="toscana" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Toscana</h3>
+                <p>200 gr. de carne parrillera, queso semi mantecoso y trozos de champinon salteados en vino blanco.</p>
+                <p>$17.00</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/veggie_grill.png" alt="veggie_grill" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Veggie Grill</h3>
+                <p>200 gr. de hamburguesa de quinua, gruesa lamina de queso, cebolla grillada, lechuga y guacamole.</p>
+                <p>$15.50</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/wall_street.png" alt="wall_street" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Wall Street</h3>
+                <p>200 gr. de carne angus de la casa, cebolla caramelizada, tocino crocante y onions rings.</p>
+                <p>$14.50</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 mb-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes1/palermo_lolos.png" alt="palermo_lolos" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Palermo Lolos</h3>
+                <p>200 gr. de carne parrillera, queso semi mantecoso, chimichurri ahumado, salsa de queso y mermelada de aji amarillo.</p>
+                <p>$12.50</p>
+              </div>
             </div>
           </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/crispy_wings.png" alt="crispy_wings" />
-            <div class="contenedor-infoMenu">
-              <h3>Crispy Wings</h3>
-              <p>Porcion de alitas fritas sobre salsa bbq ahumada de tocino, de la mano de papas fritas y salsa tartara.</p>
-              <p>$12.00</p>
+
+          <div class="col-sm-6">
+            <h2>PARA COMPARTIR:</h2>
+            <!--Lista-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/camotes_fritos.png" alt="camotes_fritos" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Camotes fritos</h3>
+                <p>Porcion de crocantes camotes fritos.</p>
+                <p>$7.00</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/mexican.png" alt="mexican" />
-            <div class="contenedor-infoMenu">
-              <h3>Mexican</h3>
-              <p>Carne mechada de asado con papas fritas cubierto de queso cheddar fundido de la mano de guacamole.</p>
-              <p>$18.00</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/crispy_wings.png" alt="crispy_wings" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Crispy Wings</h3>
+                <p>Porcion de alitas fritas sobre salsa bbq ahumada de tocino, de la mano de papas fritas y salsa tartara.</p>
+                <p>$12.00</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/onion_rings.png" alt="onion_rings" />
-            <div class="contenedor-infoMenu">
-              <h3>Onion Rings</h3>
-              <p>Crocantes aros de cebolla blanca empanizados.</p>
-              <p>$6.00</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/mexican.png" alt="mexican" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Mexican</h3>
+                <p>Carne mechada de asado con papas fritas cubierto de queso cheddar fundido de la mano de guacamole.</p>
+                <p>$18.00</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/papas_nativas.png" alt="papas_nativas" />
-            <div class="contenedor-infoMenu">
-              <h3>Papas nativas fritas</h3>
-              <p>Porcion de papas nativas fritas de estacion.</p>
-              <p>$4.50</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/onion_rings.png" alt="onion_rings" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Onion Rings</h3>
+                <p>Crocantes aros de cebolla blanca empanizados.</p>
+                <p>$6.00</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/lolos_hot_wings.png" alt="lolos_hot_wings" />
-            <div class="contenedor-infoMenu">
-              <h3>Lolos hot Wings</h3>
-              <p>Nuestras alitas de siempre, pero en su version mucho mas picante.</p>
-              <p>$25.00</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img class="img-fluid" src="../imagenes/menu_imagenes/menu_imagenes2/papas_nativas.png" alt="papas_nativas" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Papas nativas fritas</h3>
+                <p>Porcion de papas nativas fritas de estacion.</p>
+                <p>$4.50</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/lolos_street.png" alt="lolos_street" />
-            <div class="contenedor-infoMenu">
-              <h3>Lolos Street</h3>
-              <p>Salchicha, chorizos y pollo a la brasa troceado, de la mano de papas nativas fritas segun la estacion.</p>
-              <p>$15.00</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/lolos_hot_wings.png" alt="lolos_hot_wings" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Lolos hot Wings</h3>
+                <p>Nuestras alitas de siempre, pero en su version mucho mas picante.</p>
+                <p>$25.00</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/street_wings.png" alt="street_wings" />
-            <div class="contenedor-infoMenu">
-              <h3>Street Wings</h3>
-              <p>Porcion de alitas fritas, maceradas en salsa bbq, cebolla china, sesamo tostado con papas fritas y salsa tartara.</p>
-              <p>$16.00</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/lolos_street.png" alt="lolos_street" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Lolos Street</h3>
+                <p>Salchicha, chorizos y pollo a la brasa troceado, de la mano de papas nativas fritas segun la estacion.</p>
+                <p>$15.00</p>
+              </div>
             </div>
-          </div>
-          <!--*-->
-          <div class="lista">
-            <img src="../imagenes/menu_imagenes/menu_imagenes2/promo_budweiser.png" alt="promo_budweiser" />
-            <div class="contenedor-infoMenu">
-              <h3>Promo Budweiser</h3>
-              <p>Incluye 2 Clasicas Lolos, de la mano de su Budweiser.</p>
-              <p>$39.00</p>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/street_wings.png" alt="street_wings" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Street Wings</h3>
+                <p>Porcion de alitas fritas, maceradas en salsa bbq, cebolla china, sesamo tostado con papas fritas y salsa tartara.</p>
+                <p>$16.00</p>
+              </div>
+            </div>
+            <!--*-->
+            <div class="container bg-dark bg-gradient d-flex mt-5 mb-5 height-menu">
+              <img src="../imagenes/menu_imagenes/menu_imagenes2/promo_budweiser.png" alt="promo_budweiser" />
+              <div class="text-light text-center row align-items-center">
+                <h3>Promo Budweiser</h3>
+                <p>Incluye 2 Clasicas Lolos, de la mano de su Budweiser.</p>
+                <p>$39.00</p>
+              </div>
             </div>
           </div>
         </div>
@@ -203,38 +234,41 @@
       </section>
       <!--Fin Section global-->
 
-      <footer class="footer">
-        <div class="colum">
-          <div class="footer-logo">
-            <img src="../imagenes/Lolos.png" alt="LogoLolos" />
-          </div>
-        </div>
-        <div class="colum letraFooter">
-          <h4>Contactanos :</h4>
-          <div>
-            <p><a href="mailto:loloshuacho@gmail.com" target="_blank">reservaslolos@gmail.com</a></p>
-            <p>+51 921 145 388</p>
-            <p>Sede principal: Av. 28 de Julio</p>
-          </div>
-        </div>
-        <div class="colum letraFooter">
-          <h4>Sigue nuestras redes sociales :</h4>
-          <div>
-            <div class="colum-redes">
-              <img src="../imagenes/instagram.png" alt="instagram" />
-              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <footer class="container-fluid bg-primary letraFooter text-center">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <p class="titulo-header">Lolos</p>
+              <img src="../imagenes/Lolos.png" alt="LogoLolos" />
             </div>
-            <div class="colum-redes">
-              <img src="../imagenes/facebook.png" alt="facebook" />
-              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+  
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 letraFooter">
+              <p class="mb-10">Contactanos :</p>
+              <a class="list-unstyled" href="mailto:loloshuacho@gmail.com" target="_blank">reservaslolos@gmail.com</a>
+              <p>+51 921 145 388</p>
+              <p>Sede principal: Av. 28 de Julio</p>
             </div>
-            <div class="colum-redes">
-              <img src="../imagenes/twitter.png" alt="twitter" />
-              <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+  
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0 letraFooter">
+              <p class="mb-10">Sigue nuestras redes sociales :</p>
+              <div class="colum-redes">
+                <img src="../imagenes/twitter.png" alt="twitter" />
+                <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+              </div>
+              <div class="colum-redes">
+                <img src="../imagenes/instagram.png" alt="instagram" />
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+              </div>
+              <div class="colum-redes">
+                <img src="../imagenes/facebook.png" alt="facebook" />
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </div>
             </div>
           </div>
         </div>
       </footer>
-    </div>
+    
   </body>
 </html>
