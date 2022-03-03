@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap'); /*Titulo "Lolos"*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap'); /*Banner*/
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Kanit:wght@100&family=Sofia&family=Trocchi&display=swap');/*Header - Footer - Parrafos*/
+
+$tipografia:'Dongle', sans-serif;
+$tipografia-titulo:'Trocchi', serif; 
+$tipografia-slogan:'Sofia', cursive;
+
+$backanimation: #E6DDC4;
+$fondoNavFooter: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
+
+
+// Maps
+$color: (
+    parrafo:#E6DDC4,
+    titulo:#FFCA03,
+    body:#031332,
+    );
+
+$tamanoLetra: (
+    titulo: 50px,
+    subtitulo:2.2em,  
+    parrafo: 1.6em
+);
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin  txt-center{
+    text-align: center;
+}
+
+@mixin flex-center-colum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+$backhover: (
+    bloque1:#f95959,
+    bloque2:#53a8b6,
+    bloque3:#f95959,
+    bloque4: #53a8b6,
+    bloque5:#f95959,
+    bloque6:#53a8b6,
+    );
+
+

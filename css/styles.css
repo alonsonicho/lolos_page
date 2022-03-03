@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap");
+/*Titulo "Lolos"*/
+@import url("https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap");
+/*Banner*/
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Kanit:wght@100&family=Sofia&family=Trocchi&display=swap");
+/*Header - Footer - Parrafos*/
+body {
+  background-color: #031332;
+}
+
+nav {
+  background-image: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
+}
+
+nav div {
+  font-family: "Dongle", sans-serif;
+  font-size: 1.7em;
+}
+
+nav div button {
+  background-color: #FFCA03 !important;
+}
+
+nav div li a {
+  color: #E6DDC4 !important;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+nav div li a:hover {
+  color: red !important;
+  background-color: #FFCA03;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px red;
+          box-shadow: 2px 2px red;
+}
+
+.titulo-header {
+  font-family: "Trocchi", serif;
+  font-size: 50px;
+  color: #FFCA03;
+}
+
+.slogan-texto, .banner-nosotros .slogan-nosotros-nuevo {
+  background-color: #064663;
+  position: absolute;
+  color: #FFCA03;
+  border: 3px solid yellow;
+  border-radius: 1rem;
+  font-family: "Sofia", cursive;
+  padding: 1rem;
+}
+
+.container-servicio {
+  font-family: "Dongle", sans-serif;
+}
+
+.container-servicio h3 {
+  color: #E6DDC4;
+  font-size: 2.2em;
+}
+
+.container-servicio p {
+  color: #E6DDC4;
+  font-size: 1.6em;
+}
+
+.cont-servicio {
+  font-family: "Dongle", sans-serif;
+  color: #E6DDC4;
+  width: 100%;
+}
+
+.cont-servicio h3 {
+  font-size: 2.2em;
+}
+
+.cont-servicio .bloque {
+  background-color: #E6DDC4;
+  border-radius: 10px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-box-shadow: 10px 5px 5px #91912a;
+          box-shadow: 10px 5px 5px #91912a;
+  margin: 15px;
+}
+
+.cont-servicio .bloque p {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.cont-servicio .bloque:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 25px yellow;
+          box-shadow: 0 0 25px yellow;
+}
+
+footer {
+  background-image: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
+  font-family: "Dongle", sans-serif;
+  color: #E6DDC4;
+}
+
+footer .logo-footer {
+  width: 150px;
+  height: 150px;
+}
+
+footer .colum-redes {
+  margin: 15px;
+}
+
+footer .colum-redes img {
+  width: 35px;
+  height: 35px;
+}
+
+footer div {
+  font-size: 30px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #E6DDC4;
+}
+
+.menu {
+  margin-top: 10rem !important;
+}
+
+.menu h2 {
+  text-align: center;
+  color: #E6DDC4;
+}
+
+.vistaMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 910px) {
+  .cont-menu {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.banner-nosotros {
+  margin-top: 6rem !important;
+}
+
+.banner-nosotros .img-fluid {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-nosotros .slogan-nosotros-nuevo {
+  font-size: 2.2em;
+}
+
+.cont-nosotros, .cont-locales {
+  text-align: center;
+  font-family: "Dongle", sans-serif;
+  color: #E6DDC4;
+}
+
+.cont-nosotros h3, .cont-locales h3 {
+  font-size: 2.2em;
+}
+
+.cont-nosotros p, .cont-locales p {
+  font-size: 1.6em;
+}
+
+.mrg {
+  margin-top: 6rem;
+}
+
+.mrg .img-fluid {
+  width: 100%;
+  height: 60vh;
+}
+
+.nuestrosLocales {
+  background-image: url("../imagenes/imagen-local.jpg");
+}
+
+.bloque-local {
+  font-family: "Dongle", sans-serif;
+  width: 22rem;
+  text-align: center;
+  margin: 1rem 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.6em;
+  background-color: #E6DDC4;
+}
+
+.bloque1:hover {
+  color: #f95959 !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 30px #f95959;
+          box-shadow: 0 0 30px #f95959;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.bloque2:hover {
+  color: #53a8b6 !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 30px #53a8b6;
+          box-shadow: 0 0 30px #53a8b6;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.bloque3:hover {
+  color: #f95959 !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 30px #f95959;
+          box-shadow: 0 0 30px #f95959;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.bloque4:hover {
+  color: #53a8b6 !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 30px #53a8b6;
+          box-shadow: 0 0 30px #53a8b6;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.bloque5:hover {
+  color: #f95959 !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 30px #f95959;
+          box-shadow: 0 0 30px #f95959;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.bloque6:hover {
+  color: #53a8b6 !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 0 30px #53a8b6;
+          box-shadow: 0 0 30px #53a8b6;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.formularioContacto {
+  margin-top: 6.6rem;
+  text-align: center;
+  font-family: "Dongle", sans-serif;
+  color: #E6DDC4 !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0d1539), color-stop(#00203c), color-stop(#00262e), color-stop(#002919), to(#1e2908)) !important;
+  background-image: linear-gradient(to bottom, #0d1539, #00203c, #00262e, #002919, #1e2908) !important;
+}
+
+.formularioContacto .introContacto {
+  font-size: 2.2em;
+  background-color: #1A374D;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 60%;
+  height: auto;
+}
+
+.frm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.frm label {
+  font-size: 1.6em;
+}
+
+.frm input {
+  width: 20rem;
+  height: 2.5rem;
+}
+/*# sourceMappingURL=styles.css.map */

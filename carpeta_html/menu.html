@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../imagenes/Lolos.png" />
-    <title>Lolos</title>
+    <title>Menu Lolos</title>
+    <meta name="keywords" content="Restaurante, Menu Lolos, Huacho, norte chico, platos exquisitos" />
+    <meta name="description" content="Lolos especialidad en Hamburguesas, salchipapas, bocaditos y sandwiches, encuentra tu hamburguesa preferida">
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-search-pseudo-elements></script>
     <!-- CSS only -->
     <link
@@ -20,51 +22,60 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
 
-      <header>
-        <nav class="navbar navbar-expand-lg header fixed-top">
-          <div class="container-fluid letraNav">
-            <a href="../index.html"><img src="../imagenes/Lolos.png" alt="LogoLolos" /></a>
-            <a class="navbar-brand titulo-header" href="index.html">Lolos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav letraNav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="locales.html">Locales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-lg header fixed-top">
+        <div class="container-fluid">
+          <a href="index.html">
+            <img src="../imagenes/Lolos.png" alt="LogoLolos"/></a>
+          <a class="navbar-brand titulo-header">Lolos</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav">
+            <ul class="navbar-nav letraNav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="locales.html">Locales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
       <!-- Section MENU -->
-
       <section class="menu letraParrafo container">
-        <h2 class="titulo-mn">MENU</h2>
         <div class="row">
           <div class="col-sm-6">
             <h2>HAMBURGUESAS:</h2>
             <!--LISTA-->
-            <div class="container-fluid bg-dark bg-gradient d-flex mt-5 height-menu">
-              <img src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos.png" alt="clasica_lolos" />
+            <div class="vistaMenu cont-menu container-fluid bg-dark bg-gradient d-flex mt-5">
+              <img class="igg" src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos.png" alt="clasica_lolos" />
               <div class="text-light text-center row align-items-center">
                 <h3>Clasica Lolos</h3>
                 <p>200 gr. de carne , aros de cebolla blanca fresca, rodajas de tomate, lechuga, queso y salsa de la casa.</p>
@@ -72,7 +83,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/clasica_lolos_xl.png" alt="clasica_lolos_xl" />
               <div class="text-light text-center row align-items-center">
                 <h3>Clasica Lolos XL</h3>
@@ -81,7 +92,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/crispy_chiken.png" alt="crispy_chiken" />
               <div class="text-light text-center row align-items-center">
                 <h3>Crispy Chicken</h3>
@@ -90,7 +101,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/frankfurt.png" alt="frankfurt" />
               <div class="text-light text-center row align-items-center">
                 <h3>Frankfurt</h3>
@@ -99,7 +110,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/san_juan.png" alt="san_juan" />
               <div class="text-light text-center row align-items-center">
                 <h3>San Juan</h3>
@@ -108,7 +119,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/toscana.png" alt="toscana" />
               <div class="text-light text-center row align-items-center">
                 <h3>Toscana</h3>
@@ -117,7 +128,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/veggie_grill.png" alt="veggie_grill" />
               <div class="text-light text-center row align-items-center">
                 <h3>Veggie Grill</h3>
@@ -126,7 +137,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/wall_street.png" alt="wall_street" />
               <div class="text-light text-center row align-items-center">
                 <h3>Wall Street</h3>
@@ -135,7 +146,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 mb-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5 mb-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes1/palermo_lolos.png" alt="palermo_lolos" />
               <div class="text-light text-center row align-items-center">
                 <h3>Palermo Lolos</h3>
@@ -148,7 +159,7 @@
           <div class="col-sm-6">
             <h2>PARA COMPARTIR:</h2>
             <!--Lista-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/camotes_fritos.png" alt="camotes_fritos" />
               <div class="text-light text-center row align-items-center">
                 <h3>Camotes fritos</h3>
@@ -157,7 +168,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/crispy_wings.png" alt="crispy_wings" />
               <div class="text-light text-center row align-items-center">
                 <h3>Crispy Wings</h3>
@@ -166,7 +177,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/mexican.png" alt="mexican" />
               <div class="text-light text-center row align-items-center">
                 <h3>Mexican</h3>
@@ -175,7 +186,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/onion_rings.png" alt="onion_rings" />
               <div class="text-light text-center row align-items-center">
                 <h3>Onion Rings</h3>
@@ -184,7 +195,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img class="img-fluid" src="../imagenes/menu_imagenes/menu_imagenes2/papas_nativas.png" alt="papas_nativas" />
               <div class="text-light text-center row align-items-center">
                 <h3>Papas nativas fritas</h3>
@@ -193,7 +204,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/lolos_hot_wings.png" alt="lolos_hot_wings" />
               <div class="text-light text-center row align-items-center">
                 <h3>Lolos hot Wings</h3>
@@ -202,7 +213,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/lolos_street.png" alt="lolos_street" />
               <div class="text-light text-center row align-items-center">
                 <h3>Lolos Street</h3>
@@ -211,7 +222,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/street_wings.png" alt="street_wings" />
               <div class="text-light text-center row align-items-center">
                 <h3>Street Wings</h3>
@@ -220,7 +231,7 @@
               </div>
             </div>
             <!--*-->
-            <div class="container bg-dark bg-gradient d-flex mt-5 mb-5 height-menu">
+            <div class="vistaMenu cont-menu container bg-dark bg-gradient d-flex mt-5 mb-5">
               <img src="../imagenes/menu_imagenes/menu_imagenes2/promo_budweiser.png" alt="promo_budweiser" />
               <div class="text-light text-center row align-items-center">
                 <h3>Promo Budweiser</h3>
@@ -234,7 +245,7 @@
       </section>
       <!--Fin Section global-->
 
-      <footer class="container-fluid bg-primary letraFooter text-center">
+      <footer class="container-fluid bg-primary text-center">
         <!-- Grid container -->
         <div class="container p-4">
           <!--Grid row-->

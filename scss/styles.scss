@@ -1,0 +1,224 @@
+@import "variables";
+
+body{
+    background-color: map-get($color, body);
+}
+
+nav{
+    background-image: $fondoNavFooter;
+    div{
+        font-family: $tipografia;
+        font-size: 1.7em;
+        button{
+            background-color: map-get($color, titulo)!important;
+        }     
+        li a{
+            color: map-get($color, parrafo)!important;
+            margin-left: 2rem;
+            border-radius: 0.5rem;
+            transition: .7s ease;
+            &:hover{
+                color: red !important;
+                background-color:  map-get($color, titulo);
+                font-weight: bold;
+                box-shadow: 2px 2px red;
+            }
+        }
+    }
+}
+
+.titulo-header{
+    font-family: $tipografia-titulo;
+    font-size: map-get($tamanoLetra, titulo);
+    color: map-get($color, titulo);
+}
+
+.slogan-texto{
+    background-color: #064663;
+    position: absolute;
+    color: map-get($color, titulo);
+    border: 3px solid yellow; 
+    border-radius: 1rem;
+    font-family: $tipografia-slogan;
+    padding: 1rem;
+}
+
+.container-servicio{
+    font-family: $tipografia;
+    h3{
+        color:map-get($color, parrafo);
+        font-size: map-get($tamanoLetra, subtitulo);
+    }
+    p{
+        color: map-get($color, parrafo);
+        font-size: map-get($tamanoLetra, parrafo);
+    }
+}
+
+.cont-servicio{
+    font-family: $tipografia;
+    color: map-get($color, parrafo);
+    width: 100%;
+    h3{
+        font-size: map-get($tamanoLetra, subtitulo);
+    }
+    .bloque{
+        background-color: $backanimation;
+        border-radius: 10px;
+        transition: .7s ease;
+        box-shadow: 10px 5px 5px rgb(145, 145, 42);
+        margin: 15px;
+        p{
+            font-size: map-get($tamanoLetra, parrafo);
+            font-weight: bold;
+        }
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px yellow;
+        }
+    }
+}
+
+footer{
+    background-image: $fondoNavFooter;
+    font-family: $tipografia;
+    color: map-get($color, parrafo);
+    .logo-footer{
+        @include sizes(150px, 150px);
+    }
+    .colum-redes {
+        margin: 15px;
+        img{
+            @include sizes(35px, 35px);
+        }
+    }
+    div{
+        font-size: 30px;
+        a{
+            text-decoration: none;
+            color: map-get($color, parrafo);
+        }
+    }
+}
+
+.menu{
+    margin-top: 10rem !important;
+    h2{
+        @include txt-center;
+        color: map-get($color, parrafo);
+    }
+}
+
+.vistaMenu{
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+}
+
+$vista:mobile;
+@if $vista==desktop{
+    @media only screen and (min-width:1024px){
+        .cont-menu{
+            @include sizes(100%, auto);
+            flex-direction: row;
+        }
+    }
+}@else if $vista == mobile{
+    @media only screen and (max-width:910px){
+        .cont-menu{
+            @include sizes(100%, auto);
+            flex-direction: column;
+        }
+    }
+}
+
+.banner-nosotros{
+    margin-top: 6rem !important;
+    .img-fluid{
+        @include sizes(100%, 100vh)
+    }
+    .slogan-nosotros-nuevo{
+        @extend .slogan-texto;
+        font-size: map-get($tamanoLetra, subtitulo);
+    }
+}
+
+.cont-nosotros{
+    @include txt-center;
+    font-family: $tipografia;
+    color: map-get($color, parrafo);
+    h3{
+        font-size: map-get($tamanoLetra, subtitulo);
+    }
+    p{
+        font-size: map-get($tamanoLetra, parrafo);
+    }
+}
+
+.mrg{
+    margin-top: 6rem;
+    .img-fluid{
+        @include sizes(100%,60vh);
+    }
+}
+
+.nuestrosLocales{
+    background-image: url("../imagenes/imagen-local.jpg");
+}
+
+.cont-locales{
+    @extend .cont-nosotros;
+}
+
+.bloque-local{
+    font-family: $tipografia;
+    width: 22rem;
+    @include txt-center;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:  map-get($tamanoLetra, parrafo);
+    background-color:  map-get($color, parrafo);
+}
+
+@each $bloque, $hover in $backhover{
+    .#{$bloque}:hover{
+        color: $hover !important;
+        cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: 0 0 30px $hover;
+        transition: .7s ease;
+    }
+}
+
+.formularioContacto{
+    margin-top: 6.6rem;
+    @include txt-center;
+    font-family: $tipografia;
+    color: map-get($color, parrafo) !important;
+    background-image: linear-gradient(to bottom, #0d1539, #00203c, #00262e, #002919, #1e2908) !important;
+    .introContacto{
+        font-size: map-get($tamanoLetra, subtitulo);
+        background-color: #1A374D;
+        margin: 0 auto;
+        border-radius: 10px;
+        @include sizes(60%, auto);
+    }
+}
+
+.frm{
+    @include flex-center-colum;
+    label{
+        font-size: map-get($tamanoLetra, parrafo);
+    }
+    input{
+        @include sizes(20rem, 2.5rem);
+    }
+}
+
+
+
+
+
+
+
