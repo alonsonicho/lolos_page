@@ -6,7 +6,7 @@ $tipografia:'Dongle', sans-serif;
 $tipografia-titulo:'Trocchi', serif; 
 $tipografia-slogan:'Sofia', cursive;
 
-$backanimation: #E6DDC4;
+$backanimation: #95A5A6;
 $fondoNavFooter: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
 
 
@@ -15,11 +15,15 @@ $color: (
     parrafo:#E6DDC4,
     titulo:#FFCA03,
     body:#031332,
+    fondo-slogan:#064663,
+    textMenu:black,
+    vistaMenu:radial-gradient(circle, rgba(74,166,182,1) 0%, rgba(43,49,101,1) 0%, rgba(73,30,24,1) 0%)
     );
 
 $tamanoLetra: (
     titulo: 50px,
-    subtitulo:2.2em,  
+    footer:30px,
+    subtitulo:2.5em,  
     parrafo: 1.6em
 );
 
@@ -36,6 +40,18 @@ $tamanoLetra: (
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@mixin  flex-center-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin  flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 $backhover: (
