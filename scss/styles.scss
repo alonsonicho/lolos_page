@@ -16,13 +16,13 @@ nav {
       color: map-get($color, parrafo) !important;
       margin-left: 2rem;
       border-radius: 0.5rem;
-      transition: 0.7s ease;
+      transition: 0.4s ease;
       &:hover {
         color: red !important;
         background-color: map-get($color, titulo);
         font-weight: bold;
         box-shadow: 2px 2px red;
-        transition: 0.7s ease;
+        transition: 0.4s ease;
       }
     }
   }
@@ -45,6 +45,10 @@ nav {
   @include txt-center;
 }
 
+.mgb {
+  margin-top: 6.5rem;
+}
+
 .slogan-texto {
   @extend .slogan;
 }
@@ -61,7 +65,7 @@ nav {
   }
 }
 
-.mg{
+.mg {
   margin-top: 1.5rem;
 }
 
@@ -72,13 +76,12 @@ nav {
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 1rem;
-  // background-color: #142f43;
   background-color: #2b4450;
   h3 {
     font-size: map-get($tamanoLetra, subtitulo);
   }
   .bloque {
-    @include sizes(60%, auto);
+    @include sizes(75%, auto);
     background-color: $backanimation;
     border-radius: 1rem;
     transition: 0.7s ease;
@@ -99,11 +102,25 @@ footer {
   .logo-footer {
     @include sizes(150px, 150px);
   }
+  .sub {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .email-footer {
+    &:hover {
+      color: map-get($color, parrafo);
+    }
+  }
   .colum-redes {
     margin: 15px;
-    img {
-      @include sizes(35px, 35px);
+    a {
+      &:hover {
+        color: map-get($color, parrafo);
+      }
     }
+  }
+  .img-footer {
+    @include sizes(25px, 25px);
   }
   div {
     font-size: map-get($tamanoLetra, footer);
@@ -114,7 +131,7 @@ footer {
   }
 }
 
-.mnu{
+.mnu {
   background-image: url("../imagenes/menu-background.png");
   background-attachment: fixed;
 }
@@ -127,13 +144,12 @@ footer {
   h2 {
     font-size: 2.8em;
     margin: 0 auto;
-    padding: .5rem;
+    padding: 0.5rem;
     font-weight: bold;
     border-radius: 0 1.5rem 0 1.5rem;
-    border: 5px solid #591e15;
-    background-color: #acc6aa;
-    color: map-get($color, textMenu);
-    @include sizes(260px, auto);
+    border: 4px solid map-get($color, parrafo);
+    background-color: map-get($color, black-transparent);
+    @include sizes(280px, auto);
   }
   h3 {
     font-size: map-get($tamanoLetra, subtitulo);
@@ -144,73 +160,14 @@ footer {
 }
 
 .vistaMenu {
-  background: map-get($color, vistaMenu);
+  background-color: map-get($color, black-transparent) !important;
   border-radius: 1rem;
   @include flex-center-center;
   img {
-    padding: 1rem;
-    @include sizes(100%, 100%);
-  }
-  div{
-    @include sizes(100%,300px);
+    border-radius: 1rem;
   }
 }
 
-$vista: mobile;
-@if $vista==desktop {
-  @media only screen and (min-width: 1024px) {
-    .vistaMenu{
-      @include sizes(100%, auto);
-      flex-direction: row;
-    }
-  }
-} @else if $vista == mobile {
-  @media only screen and (max-width: 990px) {
-    .vistaMenu{
-      @include sizes(100%, auto);
-      flex-direction: column;
-    }
-  }
-}
-
-.banner-nosotros {
-  margin-top: 6rem !important;
-  .img-fluid {
-    @include sizes(100%, 100vh);
-  }
-  .slogan-nosotros-nuevo {
-    @extend .slogan;
-  }
-}
-
-// Media Query para Slogan index y nosotros
-@media only screen and (min-width: 768px) {
-  .slogan-texto{
-    @include sizes(40%, auto);
-    font-size: map-get($tamanoLetra, subtitulo);
-  }
-  .slogan-nosotros-nuevo {
-    @include sizes(60%, auto);
-    font-size: map-get($tamanoLetra, subtitulo);
-  }
-  .img-banner-index{
-    @include sizes(100%, 100vh);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .slogan-texto{
-    @include sizes(70%, auto);
-    font-size: map-get($tamanoLetra, parrafo);
-  }
-  .slogan-nosotros-nuevo {
-    @include sizes(70%, auto);
-    font-size: map-get($tamanoLetra, parrafo);
-  }
-  .img-banner-index{
-    @include sizes(100%, 60vh);
-  }
-}
 // ------------------------------------------
 
 .cont-nosotros {
@@ -255,6 +212,7 @@ $vista: mobile;
 
 .nuestrosLocales {
   background-image: url("../imagenes/imagen-local.jpg");
+  margin: 2rem auto;
   h2 {
     color: map-get($color, parrafo);
     @include txt-center;
@@ -274,6 +232,9 @@ $vista: mobile;
   font-weight: bold;
   font-size: map-get($tamanoLetra, parrafo);
   background-color: map-get($color, parrafo);
+  .img-locales {
+    @include sizes(25px, 25px);
+  }
 }
 
 @each $bloque, $hover in $backhover {
@@ -293,35 +254,36 @@ $vista: mobile;
   color: map-get($color, parrafo);
   .introContacto {
     font-size: map-get($tamanoLetra, subtitulo);
-    // background-color: #1a374d;
-    background-color: map-get($color, fondo-slogan);
+    background-color: #064663;
     margin: 9rem auto 2rem;
     border-radius: 10px;
     @include sizes(65%, auto);
+  }
+  h2 {
+    font-size: map-get($tamanoLetra, titulo);
   }
 }
 
 .cont-img-contacto {
   background-image: url("../imagenes/contacto-img2.jpg");
   @include sizes(100%, 80vh);
-  @include flex-center-center
+  @include flex-center-center;
 }
-
 
 .div-form {
   @include flex-center-row;
   @include sizes(70%, 80%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: map-get($color, black-transparent);
 }
 
-.container-form{
-    @include sizes(70%, auto);
-    form{
-        @include sizes(100%, auto);
-    }
+.container-form {
+  @include sizes(70%, auto);
+  form {
+    @include sizes(100%, auto);
+  }
 }
 
-.div-info{
+.div-info {
   @include sizes(100%, auto);
   @include flex-center-center;
   padding: 20px;
@@ -330,70 +292,69 @@ $vista: mobile;
 .list-info {
   @include flex-center-center;
   @include sizes(30%, 100%);
-    border: 2px solid red;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    flex-direction: column;
-    h2{
-      font-size: map-get($tamanoLetra, subtitulo);
-    }
-    p{
-      font-size: map-get($tamanoLetra, parrafo);
-    }
+  border: 2px solid red;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  flex-direction: column;
+  h2 {
+    font-size: map-get($tamanoLetra, subtitulo);
+  }
+  p {
+    font-size: map-get($tamanoLetra, parrafo);
+  }
 }
 
-
-.input-cont{
+.input-cont {
   @include sizes(100%, 50px);
   padding: 30px;
 }
 
-.input{
+.input {
   @include sizes(100%, 40px);
   position: relative;
   bottom: 15px;
 }
 
-.input input{
+.input input {
   @include sizes(100%, 35px);
   outline: none;
   border: none;
-  border-bottom: 2px solid #35bcbf;
+  border-bottom: 2px solid map-get($color, input);
   font-size: 20px;
   background-color: transparent;
   color: blanchedalmond;
 }
 
-.input label{
+.input label {
   position: absolute;
   left: 1px;
   bottom: 5px;
-  color: #2ecece;
+  color: map-get($color, input);
   font-size: 25px;
   pointer-events: none;
   transition: all 0.3s ease;
 }
 
-.input input:focus ~label, 
-.input input:valid ~label{
+.input input:focus ~ label,
+.input input:valid ~ label {
   transform: translateY(-20px);
   font-size: 20px;
-  color: #2ecece;
+  color: map-get($color, input);
 }
 
-.input input:focus, 
-.input input:valid{
-  border-color: #2ecece;
+.input input:focus,
+.input input:valid {
+  border-color: map-get($color, input);
 }
 
-.mensaje{
+.mensaje {
   margin: 20px auto;
   @include sizes(90%, auto);
   @include flex-center-center;
 }
 
-.btn{
+.btn {
   background-color: #f16821;
   @include sizes(100px, 40px);
   font-weight: bold;
@@ -404,13 +365,15 @@ $vista: mobile;
 }
 
 @media only screen and (max-width: 768px) {
-  .div-form{
+  .div-form {
     flex-direction: column-reverse;
-    @include sizes(80%, 80%);
+    @include sizes(80%, 100%);
+    margin: 2rem 0;
   }
 
-  .list-info{
-    @include sizes(100%, 45%);
+  .list-info {
+    @include sizes(100%, auto);
+    margin: 2.5rem auto;
     border: 2px solid red;
     border-top: none;
     border-right: none;
@@ -418,18 +381,90 @@ $vista: mobile;
   }
 
   .cont-img-contacto {
-    @include sizes(100%, 110vh);
-  }
-
-  .container-form{
     @include sizes(100%, auto);
   }
 
-  .div-info{
+  .container-form {
+    @include sizes(100%, auto);
+  }
+
+  .div-info {
     flex-direction: column;
   }
 
-  .btn{
+  .btn {
     margin: 1.5rem auto;
+  }
+}
+
+// Media Querys
+@media only screen and (min-width: 1024px) {
+  .vistaMenu {
+    @include sizes(100%, auto);
+    flex-direction: column;
+    img {
+      margin-top: 1rem;
+      @include sizes(40vh, 30vh);
+    }
+    div {
+      @include sizes(100%, 210px);
+    }
+  }
+
+  .slogan-texto {
+    @include sizes(45%, auto);
+    font-size: map-get($tamanoLetra, subtitulo);
+  }
+  .img-banner {
+    @include sizes(100%, 100vh);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .general {
+    flex-direction: column;
+    .d-menu {
+      width: 100%;
+    }
+  }
+  .vistaMenu {
+    @include sizes(100%, auto);
+    flex-direction: row;
+    img {
+      margin: 1rem;
+      @include sizes(90%, auto);
+    }
+    div {
+      @include sizes(100%, auto);
+    }
+  }
+
+  .slogan-texto {
+    @include sizes(60%, auto);
+    font-size: map-get($tamanoLetra, subtitulo);
+  }
+  .img-banner {
+    @include sizes(100%, 80vh);
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .vistaMenu {
+    @include sizes(85%, auto);
+    flex-direction: column;
+    img {
+      margin-top: 1.5rem;
+    }
+    div {
+      @include sizes(100%, auto);
+    }
+  }
+
+  .slogan-texto {
+    @include sizes(80%, auto);
+    font-size: map-get($tamanoLetra, parrafo);
+  }
+  .img-banner {
+    @include sizes(100%, 60vh);
   }
 }

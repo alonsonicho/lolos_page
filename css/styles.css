@@ -18,37 +18,37 @@ nav div {
 }
 
 nav div button {
-  background-color: #FFCA03 !important;
+  background-color: #ffca03 !important;
 }
 
 nav div li a {
-  color: #E6DDC4 !important;
+  color: #e6ddc4 !important;
   margin-left: 2rem;
   border-radius: 0.5rem;
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 nav div li a:hover {
   color: red !important;
-  background-color: #FFCA03;
+  background-color: #ffca03;
   font-weight: bold;
   -webkit-box-shadow: 2px 2px red;
           box-shadow: 2px 2px red;
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .titulo-header {
   font-family: "Trocchi", serif;
   font-size: 50px;
-  color: #FFCA03;
+  color: #ffca03;
 }
 
-.slogan, .slogan-texto, .banner-nosotros .slogan-nosotros-nuevo {
-  background-color: #064663;
+.slogan, .slogan-texto {
+  background-color: rgba(1, 46, 70, 0.8);
   position: absolute;
-  color: #FFCA03;
+  color: #ffca03;
   border: 3px solid yellow;
   border-radius: 1rem;
   font-family: "Sofia", cursive;
@@ -56,9 +56,13 @@ nav div li a:hover {
   text-align: center;
 }
 
+.mgb {
+  margin-top: 6.5rem;
+}
+
 .container-servicio {
   font-family: "Dongle", sans-serif;
-  color: #E6DDC4;
+  color: #e6ddc4;
   text-align: center;
 }
 
@@ -76,7 +80,7 @@ nav div li a:hover {
 
 .cont-servicio {
   font-family: "Dongle", sans-serif;
-  color: #E6DDC4;
+  color: #e6ddc4;
   width: 85%;
   height: auto;
   margin: 1rem auto;
@@ -90,9 +94,9 @@ nav div li a:hover {
 }
 
 .cont-servicio .bloque {
-  width: 60%;
+  width: 75%;
   height: auto;
-  background-color: #95A5A6;
+  background-color: #95a5a6;
   border-radius: 1rem;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
@@ -104,14 +108,14 @@ nav div li a:hover {
 .cont-servicio .bloque:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-box-shadow: 0px 0px 20px #95A5A6;
-          box-shadow: 0px 0px 20px #95A5A6;
+  -webkit-box-shadow: 0px 0px 20px #95a5a6;
+          box-shadow: 0px 0px 20px #95a5a6;
 }
 
 footer {
   background-image: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
   font-family: "Dongle", sans-serif;
-  color: #E6DDC4;
+  color: #e6ddc4;
 }
 
 footer .logo-footer {
@@ -119,13 +123,26 @@ footer .logo-footer {
   height: 150px;
 }
 
+footer .sub {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer .email-footer:hover {
+  color: #e6ddc4;
+}
+
 footer .colum-redes {
   margin: 15px;
 }
 
-footer .colum-redes img {
-  width: 35px;
-  height: 35px;
+footer .colum-redes a:hover {
+  color: #e6ddc4;
+}
+
+footer .img-footer {
+  width: 25px;
+  height: 25px;
 }
 
 footer div {
@@ -134,7 +151,7 @@ footer div {
 
 footer div a {
   text-decoration: none;
-  color: #E6DDC4;
+  color: #e6ddc4;
 }
 
 .mnu {
@@ -146,19 +163,18 @@ footer div a {
   margin-top: 10rem;
   font-family: "Dongle", sans-serif;
   text-align: center;
-  color: #E6DDC4;
+  color: #e6ddc4;
 }
 
 .menu h2 {
   font-size: 2.8em;
   margin: 0 auto;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: bold;
   border-radius: 0 1.5rem 0 1.5rem;
-  border: 5px solid #591e15;
-  background-color: #acc6aa;
-  color: black;
-  width: 260px;
+  border: 4px solid #e6ddc4;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 280px;
   height: auto;
 }
 
@@ -171,7 +187,7 @@ footer div a {
 }
 
 .vistaMenu {
-  background: radial-gradient(circle, #4aa6b6 0%, #2b3165 0%, #491e18 0%);
+  background-color: rgba(0, 0, 0, 0.7) !important;
   border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,75 +201,14 @@ footer div a {
 }
 
 .vistaMenu img {
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-}
-
-.vistaMenu div {
-  width: 100%;
-  height: 300px;
-}
-
-@media only screen and (max-width: 990px) {
-  .vistaMenu {
-    width: 100%;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.banner-nosotros {
-  margin-top: 6rem !important;
-}
-
-.banner-nosotros .img-fluid {
-  width: 100%;
-  height: 100vh;
-}
-
-@media only screen and (min-width: 768px) {
-  .slogan-texto {
-    width: 40%;
-    height: auto;
-    font-size: 2.5em;
-  }
-  .slogan-nosotros-nuevo {
-    width: 60%;
-    height: auto;
-    font-size: 2.5em;
-  }
-  .img-banner-index {
-    width: 100%;
-    height: 100vh;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .slogan-texto {
-    width: 70%;
-    height: auto;
-    font-size: 1.6em;
-  }
-  .slogan-nosotros-nuevo {
-    width: 70%;
-    height: auto;
-    font-size: 1.6em;
-  }
-  .img-banner-index {
-    width: 100%;
-    height: 60vh;
-  }
+  border-radius: 1rem;
 }
 
 .cont-nosotros {
   padding: 3rem 0;
   text-align: center;
   font-family: "Dongle", sans-serif;
-  color: #E6DDC4;
+  color: #e6ddc4;
 }
 
 .cont-nosotros h3 {
@@ -286,7 +241,7 @@ footer div a {
 
 .mrg {
   margin-top: 9rem;
-  color: #E6DDC4;
+  color: #e6ddc4;
   font-family: "Dongle", sans-serif;
   font-size: 1.6em;
 }
@@ -303,15 +258,16 @@ footer div a {
 
 .nuestrosLocales {
   background-image: url("../imagenes/imagen-local.jpg");
+  margin: 2rem auto;
 }
 
 .nuestrosLocales h2 {
-  color: #E6DDC4;
+  color: #e6ddc4;
   text-align: center;
 }
 
 .tituloLocal {
-  color: #E6DDC4;
+  color: #e6ddc4;
 }
 
 .bloque-local {
@@ -322,7 +278,12 @@ footer div a {
   border-radius: 10px;
   font-weight: bold;
   font-size: 1.6em;
-  background-color: #E6DDC4;
+  background-color: #e6ddc4;
+}
+
+.bloque-local .img-locales {
+  width: 25px;
+  height: 25px;
 }
 
 .bloque1:hover {
@@ -396,7 +357,7 @@ footer div a {
   width: 100%;
   height: auto;
   font-family: "Dongle", sans-serif;
-  color: #E6DDC4;
+  color: #e6ddc4;
 }
 
 .formularioContacto .introContacto {
@@ -406,6 +367,10 @@ footer div a {
   border-radius: 10px;
   width: 65%;
   height: auto;
+}
+
+.formularioContacto h2 {
+  font-size: 50px;
 }
 
 .cont-img-contacto {
@@ -436,7 +401,7 @@ footer div a {
           flex-direction: row;
   width: 70%;
   height: 80%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .container-form {
@@ -512,7 +477,7 @@ footer div a {
   height: 35px;
   outline: none;
   border: none;
-  border-bottom: 2px solid #35bcbf;
+  border-bottom: 2px solid #2ecece;
   font-size: 20px;
   background-color: transparent;
   color: blanchedalmond;
@@ -583,11 +548,13 @@ footer div a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     width: 80%;
-    height: 80%;
+    height: 100%;
+    margin: 2rem 0;
   }
   .list-info {
     width: 100%;
-    height: 45%;
+    height: auto;
+    margin: 2.5rem auto;
     border: 2px solid red;
     border-top: none;
     border-right: none;
@@ -595,7 +562,7 @@ footer div a {
   }
   .cont-img-contacto {
     width: 100%;
-    height: 110vh;
+    height: auto;
   }
   .container-form {
     width: 100%;
@@ -609,6 +576,100 @@ footer div a {
   }
   .btn {
     margin: 1.5rem auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .vistaMenu {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vistaMenu img {
+    margin-top: 1rem;
+    width: 40vh;
+    height: 30vh;
+  }
+  .vistaMenu div {
+    width: 100%;
+    height: 210px;
+  }
+  .slogan-texto {
+    width: 45%;
+    height: auto;
+    font-size: 2.5em;
+  }
+  .img-banner {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .general {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .general .d-menu {
+    width: 100%;
+  }
+  .vistaMenu {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .vistaMenu img {
+    margin: 1rem;
+    width: 90%;
+    height: auto;
+  }
+  .vistaMenu div {
+    width: 100%;
+    height: auto;
+  }
+  .slogan-texto {
+    width: 60%;
+    height: auto;
+    font-size: 2.5em;
+  }
+  .img-banner {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .vistaMenu {
+    width: 85%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vistaMenu img {
+    margin-top: 1.5rem;
+  }
+  .vistaMenu div {
+    width: 100%;
+    height: auto;
+  }
+  .slogan-texto {
+    width: 80%;
+    height: auto;
+    font-size: 1.6em;
+  }
+  .img-banner {
+    width: 100%;
+    height: 60vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

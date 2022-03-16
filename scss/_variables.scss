@@ -1,66 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap'); /*Titulo "Lolos"*/
-@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap'); /*Banner*/
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Kanit:wght@100&family=Sofia&family=Trocchi&display=swap');/*Header - Footer - Parrafos*/
+@import url("https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap"); /*Titulo "Lolos"*/
+@import url("https://fonts.googleapis.com/css2?family=Sofia&family=Trocchi&display=swap"); /*Banner*/
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Kanit:wght@100&family=Sofia&family=Trocchi&display=swap"); /*Header - Footer - Parrafos*/
 
-$tipografia:'Dongle', sans-serif;
-$tipografia-titulo:'Trocchi', serif; 
-$tipografia-slogan:'Sofia', cursive;
+$tipografia: "Dongle", sans-serif;
+$tipografia-titulo: "Trocchi", serif;
+$tipografia-slogan: "Sofia", cursive;
 
-$backanimation: #95A5A6;
+$backanimation: #95a5a6;
 $fondoNavFooter: radial-gradient(circle at 50% 50%, #192b5a 0, #031332 50%, #00000e 100%);
-
 
 // Maps
 $color: (
-    parrafo:#E6DDC4,
-    titulo:#FFCA03,
-    body:#031332,
-    fondo-slogan:#064663,
-    textMenu:black,
-    vistaMenu:radial-gradient(circle, rgba(74,166,182,1) 0%, rgba(43,49,101,1) 0%, rgba(73,30,24,1) 0%)
-    );
-
-$tamanoLetra: (
-    titulo: 50px,
-    footer:30px,
-    subtitulo:2.5em,  
-    parrafo: 1.6em
+  parrafo: #e6ddc4,
+  titulo: #ffca03,
+  body: #031332,
+  fondo-slogan: rgba(1, 46, 70, 0.8),
+  input: #2ecece,
+  black-transparent: rgba(0, 0, 0, 0.7),
 );
 
-@mixin sizes($width, $height){
-    width: $width;
-    height: $height;
+$tamanoLetra: (
+  titulo: 50px,
+  footer: 30px,
+  subtitulo: 2.5em,
+  parrafo: 1.6em,
+);
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
 }
 
-@mixin  txt-center{
-    text-align: center;
+@mixin txt-center {
+  text-align: center;
 }
 
 @mixin flex-center-colum {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-@mixin  flex-center-row {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+@mixin flex-center-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
-@mixin  flex-center-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 $backhover: (
-    bloque1:#f95959,
-    bloque2:#53a8b6,
-    bloque3:#f95959,
-    bloque4: #53a8b6,
-    bloque5:#f95959,
-    bloque6:#53a8b6,
-    );
-
-
+  bloque1: #f95959,
+  bloque2: #53a8b6,
+  bloque3: #f95959,
+  bloque4: #53a8b6,
+  bloque5: #f95959,
+  bloque6: #53a8b6,
+);
